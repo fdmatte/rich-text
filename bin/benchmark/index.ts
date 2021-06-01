@@ -21,12 +21,12 @@ if (!packageNameArg) {
 }
 
 /**
- * A leading @contentful/ is allowed as an ergonomic courtesy, since this
+ * A leading @fdmatte/ is allowed as an ergonomic courtesy, since this
  * matches the Lerna --scope expectations for similar commands (which refer
  * to the npm package name). But we need to strip this before passing it to
  * `path.resolve`.
  */
-const packageName = packageNameArg.replace(/^@contentful\//, '');
+const packageName = packageNameArg.replace(/^@fdmatte\//, '');
 
 const paths = [
   __dirname,

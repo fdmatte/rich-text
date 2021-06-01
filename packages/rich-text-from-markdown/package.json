@@ -7,7 +7,7 @@
     "contentful",
     "markdown"
   ],
-  "author": "Khaled Garbaya <khaled@contentful.com>",
+  "author": "Khaled Garbaya <khaled@fdmatte.com>",
   "homepage": "https://github.com/contentful/rich-text#readme",
   "license": "MIT",
   "main": "dist/rich-text-from-markdown.es5.js",
