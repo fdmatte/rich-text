@@ -1,6 +1,6 @@
 {
   "name": "@fdmatte/rich-text-types",
-  "version": "14.1.2",
+  "version": "14.1.3",
   "main": "dist/rich-text-types.es5.js",
   "typings": "dist/types/index.d.ts",
   "files": [
