@@ -1,6 +1,6 @@
 import flatmap from 'lodash.flatmap';
 
-import * as Contentful from '@contentful/rich-text-types';
+import * as Contentful from '@fdmatte/rich-text-types';
 import { ContentfulNode, SlateNode, ContentfulNonTextNodes } from './types';
 import { getDataOfDefault } from './helpers';
 import { SchemaJSON, fromJSON, Schema } from './schema';

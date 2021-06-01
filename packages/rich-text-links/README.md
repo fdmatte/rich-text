@@ -8,19 +8,19 @@ field type.
 Using [npm](http://npmjs.org/):
 
 ```sh
-npm install @contentful/rich-text-links
+npm install @fdmatte/rich-text-links
 ```
 
 Using [yarn](https://yarnpkg.com/):
 
 ```sh
-yarn add @contentful/rich-text-links
+yarn add @fdmatte/rich-text-links
 ```
 
 ## Usage
 
 ```javascript
-import { getRichTextEntityLinks } from '@contentful/rich-text-links';
+import { getRichTextEntityLinks } from '@fdmatte/rich-text-links';
 
 const document = {
   nodeType: 'document',
@@ -37,11 +37,11 @@ const document = {
               sys: {
                 linkType: 'Entry',
                 type: 'Link',
-                id: 'yXmVKmaDBm8tRfQMwA0e'
-              }
-            }
+                id: 'yXmVKmaDBm8tRfQMwA0e',
+              },
+            },
           },
-          content: []
+          content: [],
         },
         {
           nodeType: 'embedded-asset-block',
@@ -50,11 +50,11 @@ const document = {
               sys: {
                 linkType: 'Asset',
                 type: 'Link',
-                id: 'jNhaW0aSc6Hu74SHVMtq'
-              }
-            }
+                id: 'jNhaW0aSc6Hu74SHVMtq',
+              },
+            },
           },
-          content: []
+          content: [],
         },
       ],
     },

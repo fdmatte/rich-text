@@ -4,7 +4,7 @@ Please read this resource: ["Using Rich Text with Gatsby"](https://www.contentfu
 
 ====
 
-Package `@contentful/gatsby-transformer-contentful-richtext` no longer maintained and deprecated in favour of `gatsby-source-contentful` and `@contentful/rich-text-react-renderer`.
+Package `@fdmatte/gatsby-transformer-contentful-richtext` no longer maintained and deprecated in favour of `gatsby-source-contentful` and `@fdmatte/rich-text-react-renderer`.
 
 ## Reasons for deprecation
 
@@ -17,7 +17,7 @@ Although Transformer Plugins are an excellent solution for the data transformati
 
 ## Replacement
 
-The long-term replacement for `@contentful/gatsby-transformer-contentful-richtext` is a combination of `gatsby-source-contentful` and `@contentful/rich-text-react-renderer` packages.
+The long-term replacement for `@fdmatte/gatsby-transformer-contentful-richtext` is a combination of `gatsby-source-contentful` and `@fdmatte/rich-text-react-renderer` packages.
 
 JSON output is accessible on the Rich Text Node, see example query:
 
@@ -39,8 +39,8 @@ The following snippet shows a way to define how Rich Text document is rendered:
 
 ```js
 import React from 'react';
-import { BLOCKS, MARKS } from '@contentful/rich-text-types';
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { BLOCKS, MARKS } from '@fdmatte/rich-text-types';
+import { documentToReactComponents } from '@fdmatte/rich-text-react-renderer';
 
 const Bold = ({ children }) => <span className="bold">{children}</span>;
 const Text = ({ children }) => <p className="align-center">{children}</p>;
@@ -64,13 +64,13 @@ Parses Contentful Rich Text document
 ## Install
 
 ```sh
-npm install --save @contentful/gatsby-transformer-contentful-richtext
+npm install --save @fdmatte/gatsby-transformer-contentful-richtext
 ```
 
 ## How to use
 
 ```js
-plugins: [`@contentful/gatsby-transformer-contentful-richtext`];
+plugins: [`@fdmatte/gatsby-transformer-contentful-richtext`];
 ```
 
 ## Query
@@ -94,8 +94,8 @@ After adding the plugin you will be able to query the html representation of the
 [![Edit gatsby-starter-default](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/jljrl7z82w)
 
 ```js
-// npm i @contentful/rich-text-types
-const { BLOCKS, MARKS, INLINES } = require('@contentful/rich-text-types');
+// npm i @fdmatte/rich-text-types
+const { BLOCKS, MARKS, INLINES } = require('@fdmatte/rich-text-types');
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
@@ -134,7 +134,7 @@ module.exports = {
       },
     },
     {
-      resolve: '@contentful/gatsby-transformer-contentful-richtext',
+      resolve: '@fdmatte/gatsby-transformer-contentful-richtext',
       options: {
         renderOptions: {
           /*
@@ -165,7 +165,7 @@ module.exports = {
 };
 ```
 
-The `renderNode` keys should be one of the following `BLOCKS` and `INLINES` properties as defined in [`@contentful/rich-text-types`](https://www.npmjs.com/package/@contentful/rich-text-types):
+The `renderNode` keys should be one of the following `BLOCKS` and `INLINES` properties as defined in [`@fdmatte/rich-text-types`](https://www.npmjs.com/package/@fdmatte/rich-text-types):
 
 - `BLOCKS`
   - `DOCUMENT`
@@ -189,7 +189,7 @@ The `renderNode` keys should be one of the following `BLOCKS` and `INLINES` prop
   - `ENTRY_HYPERLINK`
   - `ASSET_HYPERLINK`
 
-The `renderMark` keys should be one of the following `MARKS` properties as defined in [`@contentful/rich-text-types`](https://www.npmjs.com/package/@contentful/rich-text-types):
+The `renderMark` keys should be one of the following `MARKS` properties as defined in [`@fdmatte/rich-text-types`](https://www.npmjs.com/package/@fdmatte/rich-text-types):
 
 - `MARKS`
   - `BOLD`

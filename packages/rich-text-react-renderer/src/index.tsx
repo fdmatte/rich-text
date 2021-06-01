@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { Block, BLOCKS, Document, Inline, INLINES, MARKS, Text } from '@contentful/rich-text-types';
+import { Block, BLOCKS, Document, Inline, INLINES, MARKS, Text } from '@fdmatte/rich-text-types';
 import { nodeToReactComponent } from './util/nodeListToReactComponents';
 
 const defaultNodeRenderers: RenderNode = {

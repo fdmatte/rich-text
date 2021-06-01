@@ -9,7 +9,7 @@ import {
   Block,
   Inline,
   helpers,
-} from '@contentful/rich-text-types';
+} from '@fdmatte/rich-text-types';
 
 const defaultNodeRenderers: RenderNode = {
   [BLOCKS.PARAGRAPH]: (node, next) => `<p>${next(node.content)}</p>`,

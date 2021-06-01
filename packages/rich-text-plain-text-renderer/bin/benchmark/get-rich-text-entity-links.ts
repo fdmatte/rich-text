@@ -1,4 +1,4 @@
-import { BLOCKS, Document, UnorderedList, ListItem, Text, Node } from '@contentful/rich-text-types';
+import { BLOCKS, Document, UnorderedList, ListItem, Text, Node } from '@fdmatte/rich-text-types';
 import { documentToPlainTextString as docToString } from '../../src/index';
 
 /**

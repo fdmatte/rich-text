@@ -1,4 +1,4 @@
-import { Document, BLOCKS } from '@contentful/rich-text-types';
+import { Document, BLOCKS } from '@fdmatte/rich-text-types';
 
 export default function(entry: Object) {
   return {

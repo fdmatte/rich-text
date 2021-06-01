@@ -7,13 +7,13 @@ A library to convert markdown to Contentful Rich Text document format.
 Using [npm](http://npmjs.org/):
 
 ```sh
-npm install @contentful/rich-text-from-markdown
+npm install @fdmatte/rich-text-from-markdown
 ```
 
 Using [yarn](https://yarnpkg.com/):
 
 ```sh
-yarn add @contentful/rich-text-from-markdown
+yarn add @fdmatte/rich-text-from-markdown
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ yarn add @contentful/rich-text-from-markdown
 ### Basic
 
 ```js
-const { richTextFromMarkdown } = require('@contentful/rich-text-from-markdown');
+const { richTextFromMarkdown } = require('@fdmatte/rich-text-from-markdown');
 
 const document = await richTextFromMarkdown('# Hello World');
 ```
@@ -50,23 +50,20 @@ of that node.
 #### Example:
 
 ```js
-const { richTextFromMarkdown } = require('@contentful/rich-text-from-markdown');
+const { richTextFromMarkdown } = require('@fdmatte/rich-text-from-markdown');
 
 // define your own type for unsupported nodes like asset
-const document = await richTextFromMarkdown(
-  '![image](\'https://example.com/image.jpg\')',
-  node => ({
-    nodeType: 'embedded-[entry|asset]-[block|inline]',
-    content: [],
-    data: {
-      target: {
-        sys: {
-          type: 'Link',
-          linkType: 'Entry|Asset',
-          id: '.........'
-        }
-      }
-    }
-  })
-);
+const document = await richTextFromMarkdown("![image]('https://example.com/image.jpg')", node => ({
+  nodeType: 'embedded-[entry|asset]-[block|inline]',
+  content: [],
+  data: {
+    target: {
+      sys: {
+        type: 'Link',
+        linkType: 'Entry|Asset',
+        id: '.........',
+      },
+    },
+  },
+}));
 ```

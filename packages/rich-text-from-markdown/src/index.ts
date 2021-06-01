@@ -11,7 +11,7 @@ import {
   Hyperlink,
   Text,
   Inline,
-} from '@contentful/rich-text-types';
+} from '@fdmatte/rich-text-types';
 import { MarkdownNode, MarkdownLinkNode, MarkdownTree } from './types';
 
 const markdownNodeTypes = new Map<string, string>([

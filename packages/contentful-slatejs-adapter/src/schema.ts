@@ -1,5 +1,5 @@
 import get from 'lodash.get';
-import * as Contentful from '@contentful/rich-text-types';
+import * as Contentful from '@fdmatte/rich-text-types';
 import { ContentfulNonTextNodes } from './types';
 
 const defaultSchema: SchemaJSON = {};

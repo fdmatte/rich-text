@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { helpers, Mark } from '@contentful/rich-text-types';
+import { helpers, Mark } from '@fdmatte/rich-text-types';
 import { CommonNode, Options } from '..';
 import { appendKeyToValidElement } from './appendKeyToValidElement';
 

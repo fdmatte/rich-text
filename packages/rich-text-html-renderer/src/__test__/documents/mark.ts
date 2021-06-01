@@ -1,4 +1,4 @@
-import { Document } from '@contentful/rich-text-types';
+import { Document } from '@fdmatte/rich-text-types';
 export default function(mark: String) {
   return {
     nodeType: 'document',

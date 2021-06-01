@@ -7,19 +7,19 @@ HTML renderer for the Contentful rich text field type.
 Using [npm](http://npmjs.org/):
 
 ```sh
-npm install @contentful/rich-text-html-renderer
+npm install @fdmatte/rich-text-html-renderer
 ```
 
 Using [yarn](https://yarnpkg.com/):
 
 ```sh
-yarn add @contentful/rich-text-html-renderer
+yarn add @fdmatte/rich-text-html-renderer
 ```
 
 ## Usage
 
 ```javascript
-import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
+import { documentToHtmlString } from '@fdmatte/rich-text-html-renderer';
 
 const document = {
   nodeType: 'document',
@@ -41,7 +41,7 @@ documentToHtmlString(document); // -> <p>Hello world!</p>
 ```
 
 ```javascript
-import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
+import { documentToHtmlString } from '@fdmatte/rich-text-html-renderer';
 
 const document = {
   nodeType: 'document',
@@ -70,8 +70,8 @@ documentToHtmlString(document); // -> <p><b>Hello</b><u> world!</u></p>
 You can also pass custom renderers for both marks and nodes as an optional parameter like so:
 
 ```javascript
-import { BLOCKS, MARKS } from '@contentful/rich-text-types';
-import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
+import { BLOCKS, MARKS } from '@fdmatte/rich-text-types';
+import { documentToHtmlString } from '@fdmatte/rich-text-html-renderer';
 
 const document = {
   nodeType: 'document',
@@ -114,8 +114,8 @@ documentToHtmlString(document, options);
 Last, but not least, you can pass a custom rendering component for an embedded entry:
 
 ```javascript
-import { BLOCKS } from '@contentful/rich-text-types';
-import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
+import { BLOCKS } from '@fdmatte/rich-text-types';
+import { documentToHtmlString } from '@fdmatte/rich-text-html-renderer';
 
 const document = {
   nodeType: 'document',
@@ -140,9 +140,10 @@ documentToHtmlString(document, options);
 // -> <custom-component>(...)Link<'Entry'>(...)</custom-component>
 ```
 
-The `renderNode` keys should be one of the following `BLOCKS` and `INLINES` properties as defined in [`@contentful/rich-text-types`](https://www.npmjs.com/package/@contentful/rich-text-types):
+The `renderNode` keys should be one of the following `BLOCKS` and `INLINES` properties as defined in [`@fdmatte/rich-text-types`](https://www.npmjs.com/package/@fdmatte/rich-text-types):
 
 - `BLOCKS`
+
   - `DOCUMENT`
   - `PARAGRAPH`
   - `HEADING_1`
@@ -165,7 +166,7 @@ The `renderNode` keys should be one of the following `BLOCKS` and `INLINES` prop
   - `ENTRY_HYPERLINK`
   - `ASSET_HYPERLINK`
 
-The `renderMark` keys should be one of the following `MARKS` properties as defined in [`@contentful/rich-text-types`](https://www.npmjs.com/package/@contentful/rich-text-types):
+The `renderMark` keys should be one of the following `MARKS` properties as defined in [`@fdmatte/rich-text-types`](https://www.npmjs.com/package/@fdmatte/rich-text-types):
 
 - `BOLD`
 - `ITALIC`

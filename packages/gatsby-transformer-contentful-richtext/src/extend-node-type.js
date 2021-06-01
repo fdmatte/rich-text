@@ -1,5 +1,5 @@
-const { documentToHtmlString } = require(`@contentful/rich-text-html-renderer`);
-const { documentToPlainTextString } = require(`@contentful/rich-text-plain-text-renderer`);
+const { documentToHtmlString } = require(`@fdmatte/rich-text-html-renderer`);
+const { documentToPlainTextString } = require(`@fdmatte/rich-text-plain-text-renderer`);
 const { GraphQLString, GraphQLInt } = require(`gatsby/graphql`);
 const words = require('lodash.words');
 

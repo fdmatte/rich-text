@@ -1,5 +1,5 @@
 import React, { ReactNode, ReactNodeArray } from 'react';
-import { BLOCKS, Document, INLINES, MARKS } from '@contentful/rich-text-types';
+import { BLOCKS, Document, INLINES, MARKS } from '@fdmatte/rich-text-types';
 
 import { CommonNode, documentToReactComponents, Options } from '..';
 

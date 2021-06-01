@@ -7,13 +7,13 @@ This library provides an adapter to convert Slate's document structure to Conten
 Using [npm](http://npmjs.org/):
 
 ```sh
-npm install @contentful/contentful-slatejs-adapter
+npm install @fdmatte/contentful-slatejs-adapter
 ```
 
 Using [yarn](https://yarnpkg.com/):
 
 ```sh
-yarn add @contentful/contentful-slatejs-adapter
+yarn add @fdmatte/contentful-slatejs-adapter
 ```
 
 ## Usage

@@ -1,4 +1,4 @@
-import { Document, Node, Block, Link, NodeData } from '@contentful/rich-text-types';
+import { Document, Node, Block, Link, NodeData } from '@fdmatte/rich-text-types';
 
 export type EntityLinks = { [type in EntityType]: EntityLink[] };
 export type EntityLinkMaps = { [type in EntityType]: Map<string, EntityLink> };

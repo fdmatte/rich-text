@@ -1,4 +1,4 @@
-import { Block, Node, Inline, helpers } from '@contentful/rich-text-types';
+import { Block, Node, Inline, helpers } from '@fdmatte/rich-text-types';
 
 /**
  * Returns the text value of a rich text document.

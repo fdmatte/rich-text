@@ -7,19 +7,19 @@ React renderer for the Contentful rich text field type.
 Using [npm](http://npmjs.org/):
 
 ```sh
-npm install @contentful/rich-text-react-renderer
+npm install @fdmatte/rich-text-react-renderer
 ```
 
 Using [yarn](https://yarnpkg.com/):
 
 ```sh
-yarn add @contentful/rich-text-react-renderer
+yarn add @fdmatte/rich-text-react-renderer
 ```
 
 ## Usage
 
 ```javascript
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { documentToReactComponents } from '@fdmatte/rich-text-react-renderer';
 
 const document = {
   nodeType: 'document',
@@ -33,7 +33,7 @@ const document = {
           nodeType: 'text',
           value: 'Hello world!',
           marks: [],
-          data: {}
+          data: {},
         },
       ],
     },
@@ -44,7 +44,7 @@ documentToReactComponents(document); // -> <p>Hello world!</p>
 ```
 
 ```javascript
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { documentToReactComponents } from '@fdmatte/rich-text-react-renderer';
 
 const document = {
   nodeType: 'document',
@@ -74,8 +74,8 @@ documentToReactComponents(document);
 You can also pass custom renderers for both marks and nodes as an optional parameter like so:
 
 ```javascript
-import { BLOCKS, MARKS } from '@contentful/rich-text-types';
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { BLOCKS, MARKS } from '@fdmatte/rich-text-types';
+import { documentToReactComponents } from '@fdmatte/rich-text-react-renderer';
 
 const document = {
   nodeType: 'document',
@@ -119,8 +119,8 @@ documentToReactComponents(document, options);
 Last, but not least, you can pass a custom rendering component for an embedded entry:
 
 ```javascript
-import { BLOCKS } from '@contentful/rich-text-types';
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { BLOCKS } from '@fdmatte/rich-text-types';
+import { documentToReactComponents } from '@fdmatte/rich-text-react-renderer';
 
 const document = {
   nodeType: 'document',
@@ -154,7 +154,7 @@ documentToReactComponents(document, options);
 // -> <div><h2>[title]</h2><p>[description]</p></div>
 ```
 
-The `renderNode` keys should be one of the following `BLOCKS` and `INLINES` properties as defined in [`@contentful/rich-text-types`](https://www.npmjs.com/package/@contentful/rich-text-types):
+The `renderNode` keys should be one of the following `BLOCKS` and `INLINES` properties as defined in [`@fdmatte/rich-text-types`](https://www.npmjs.com/package/@fdmatte/rich-text-types):
 
 - `BLOCKS`
 
@@ -180,7 +180,7 @@ The `renderNode` keys should be one of the following `BLOCKS` and `INLINES` prop
   - `ENTRY_HYPERLINK`
   - `ASSET_HYPERLINK`
 
-The `renderMark` keys should be one of the following `MARKS` properties as defined in [`@contentful/rich-text-types`](https://www.npmjs.com/package/@contentful/rich-text-types):
+The `renderMark` keys should be one of the following `MARKS` properties as defined in [`@fdmatte/rich-text-types`](https://www.npmjs.com/package/@fdmatte/rich-text-types):
 
 - `BOLD`
 - `ITALIC`

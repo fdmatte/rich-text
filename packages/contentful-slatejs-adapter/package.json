@@ -1,5 +1,5 @@
 {
-  "name": "@contentful/contentful-slatejs-adapter",
+  "name": "@fdmatte/contentful-slatejs-adapter",
   "version": "14.1.2",
   "description": "",
   "keywords": [],
@@ -11,7 +11,7 @@
   "author": "Contentful GmbH",
   "repository": {
     "type": "git",
-    "url": "https://github.com/contentful/rich-text.git"
+    "url": "https://github.com/fdmatte/rich-text"
   },
   "license": "MIT",
   "engines": {
@@ -94,7 +94,7 @@
     "access": "restricted"
   },
   "dependencies": {
-    "@contentful/rich-text-types": "^5.0.0",
+    "@fdmatte/rich-text-types": "^5.0.0",
     "lodash.flatmap": "^4.5.0",
     "lodash.get": "^4.4.2",
     "lodash.omit": "^4.5.0"

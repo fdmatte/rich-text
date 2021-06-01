@@ -1,4 +1,4 @@
-import { Document, BLOCKS, INLINES } from '@contentful/rich-text-types';
+import { Document, BLOCKS, INLINES } from '@fdmatte/rich-text-types';
 
 import { documentToPlainTextString } from '../index';
 

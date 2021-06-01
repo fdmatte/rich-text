@@ -1,4 +1,4 @@
-import * as Contentful from '@contentful/rich-text-types';
+import * as Contentful from '@fdmatte/rich-text-types';
 
 export interface NodeProps {
   isVoid?: boolean;
