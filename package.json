@@ -21,12 +21,6 @@
     "test:prod": "npm run lint && npm run test -- --coverage --no-cache",
     "test:watch": "jest --watch"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "validate-commit-msg",
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "packages/**/{src,test}/**/*.ts": [
       "prettier --write",
